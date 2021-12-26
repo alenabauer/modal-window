@@ -19,4 +19,12 @@ for (let i = 0; i < btnsShowModal.length; i++) {
   })
   addCloseFunction(btnsCloseModal[i], modals[i]);
   addCloseFunction(overlay, modals[i]); // close the modal by clicking on anything outside it
+
+  // close the modal by pressing 'esc'
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modals[i].classList.contains('hidden')) {
+      modals[i].classList.add('hidden');
+      overlay.classList.add('hidden');
+    }
+  })
 }
