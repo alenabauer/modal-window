@@ -69,29 +69,19 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 60%;
   height: 600px;
-
-  background-color: white;
   padding: 6rem;
-  border-radius: 5px;
+  border-radius: 16px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  background: #fff;
 }
-
-.modal-1 {
-  background: url('https://st.depositphotos.com/1010104/1457/v/600/depositphotos_14573059-stock-illustration-santa-claus.jpg');
-  background-size: cover;
-}
-
-.modal-2 {
-  background: url('https://t4.ftcdn.net/jpg/01/27/98/07/360_F_127980758_AMwpvFUNmOuLH9LJI8ahu0hInyR5wjLw.jpg');
-  background-size: cover;
-}
-
-.modal-3 {
-  background: url('https://i.pinimg.com/originals/9e/12/50/9e1250d35eb3bfd24705e57720502c71.jpg');
-  background-size: cover;
+.modal img {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
 }
 
 .overlay {
